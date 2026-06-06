@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO対策 -->
+  <title>R's - Premium Lounge & Concept Bar</title>
+  <meta name="description" content="極上のカクテルと洗練された空間、そして個性豊かなキャストがお届けするプレミアムコンセプトバー「R's」。最新イベントやキャスト情報はSNSにて毎日更新中。">
+  <meta name="keywords" content="R's,コンセプトバー,ガールズバー,カクテル,ラウンジ,バー,Instagram,TikTok">
+  
+  <!-- OGP設定 -->
+  <meta property="og:title" content="R's - Premium Lounge & Concept Bar">
+  <meta property="og:description" content="極上のカクテルと洗練された空間。最新イベントやキャスト情報はSNSにて毎日更新中。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rs-lounge-bar.example.com/"> <!-- 実際の本番URLに変更してください -->
+  <meta property="og:image" content="assets/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="R's">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- スタイルシート & フォント & アイコン -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">
+      <a href="#">R'<span>s</span></a>
+    </div>
+    <div class="header-sns">
+      <!-- data-sns属性でJavaScriptから動的にリンクを設定します -->
+      <a href="#" data-sns="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" data-sns="tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション (巨大ネオンロゴデザインを模倣) -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="hero-neon-overlay"></div>
+    <h1 class="hero-neon-title">R's</h1>
+    <div class="hero-content fade-up">
+      
+      <!-- 巨大ネオンロゴラッピング -->
+      <div class="hero-neon-logo-container">
+        <!-- 音符やマイク、ゲームコントローラーのネオンデコレーション -->
+        
+        <span class="hero-sub-logo">Anime bar</span>
+        <span class="hero-logo-yomi">～あーるあんどえす～</span>
+      </div>
+
+      <p class="hero-lead-text">
+        極上の夜を、あなたと。
+      </p>
+
+      <div class="hero-sns-actions">
+        <a href="#" class="btn btn-outline" data-sns="instagram" id="hero-btn-instagram">
+          <i class="fa-brands fa-instagram"></i>Instagram
+        </a>
+        <a href="#" class="btn btn-accent" data-sns="tiktok" id="hero-btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i>TikTok
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 料金システムセクション (新規追加・画像を忠実に模倣) -->
+  <section class="menu-section" id="menu-section">
+    <div class="section-title fade-in">
+      <span>System</span>
+      <h2>料金システム</h2>
+    </div>
+
+    <!-- ネオン看板風のメニューボード -->
+    <div class="menu-board fade-up">
+      <!-- メニューボードヘッダー -->
+      <div class="menu-board-header">
+        <div class="menu-header-icons left-icons">
+          <i class="fa-solid fa-music neon-pink"></i>
+          <i class="fa-solid fa-microphone neon-pink"></i>
+        </div>
+        <div class="menu-main-title">
+          <span class="sub-logo">Anime bar</span>
+          <h2 class="neon-text-rs">R's</h2>
+          <span class="logo-yomi">～あーるあんどえす～</span>
+          <h3 class="neon-text-menu">MENU</h3>
+        </div>
+        <div class="menu-header-icons right-icons">
+          <i class="fa-solid fa-gamepad neon-blue"></i>
+        </div>
+      </div>
+
+      <div class="menu-divider">
+        <span>❈ 料金システム ❈</span>
+      </div>
+
+      <!-- メニューカードグリッド (3カラム構成) -->
+      <div class="menu-grid">
+        <!-- 1. ワンショット -->
+        <div class="menu-card border-pink">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-clock neon-pink"></i>
+            <h4>ワンショット</h4>
+          </div>
+          <div class="price-list">
+            <div class="price-row">
+              <span class="label">30分</span>
+              <span class="price pink-text">1,500円</span>
+            </div>
+            <p class="card-note" style="margin-top: 0.8rem;">※ワンショットでのご利用は30分制です。</p>
+          </div>
+        </div>
+
+        <!-- 2. 飲み放題 -->
+        <div class="menu-card border-blue">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-glass-cheers neon-blue"></i>
+            <h4>飲み放題</h4>
+          </div>
+          <div class="price-list">
+            <div class="price-row">
+              <span class="label">60分</span>
+              <span class="price blue-text">2,500円</span>
+            </div>
+            <div class="price-row">
+              <span class="label">90分</span>
+              <span class="price blue-text">3,000円</span>
+            </div>
+            <div class="price-row" style="border-bottom: none;">
+              <span class="label">120分</span>
+              <span class="price blue-text">3,500円</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. カラオケ -->
+        <div class="menu-card border-purple">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-microphone-lines neon-purple"></i>
+            <h4>カラオケ</h4>
+          </div>
+          <div class="price-list">
+            <div class="price-row">
+              <span class="label">歌い放題</span>
+              <span class="price purple-text">1,000円</span>
+            </div>
+            <p class="card-note" style="margin-top: 0.8rem;">プレイリストは自由、何度でも歌えます。</p>
+          </div>
+        </div>
+
+        <!-- 4. キープボトル -->
+        <div class="menu-card border-yellow">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-wine-bottle neon-orange"></i>
+            <h4>キープボトル</h4>
+          </div>
+          <div class="price-list">
+            <div class="price-row">
+              <span class="label">1本</span>
+              <span class="price orange-text">3,500円～</span>
+            </div>
+            <div class="price-row" style="border-bottom: none;">
+              <span class="label">150分</span>
+              <span class="price orange-text">3,500円</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRINK MENU Section -->
+  <section class="menu-section" id="drink-menu-section">
+    <div class="section-title fade-in">
+      <span>Drink</span>
+      <h2>DRINK MENU</h2>
+    </div>
+
+    <div class="menu-board fade-up">
+      <div class="menu-board-header">
+        <div class="menu-header-icons left-icons">
+          <i class="fa-solid fa-martini-glass neon-pink"></i>
+          <i class="fa-solid fa-mug-hot neon-pink"></i>
+        </div>
+        <div class="menu-main-title">
+          <span class="sub-logo">Anime bar</span>
+          <h2 class="neon-text-rs">R's</h2>
+          <span class="logo-yomi">～あーるあんどえす～</span>
+          <h3 class="neon-text-menu">DRINK MENU</h3>
+        </div>
+        <div class="menu-header-icons right-icons">
+          <i class="fa-solid fa-wine-glass-alt neon-blue"></i>
+        </div>
+      </div>
+
+      <div class="drink-grid">
+        <div class="menu-card border-pink">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-bottle-water neon-pink"></i>
+            <h4>焼酎・ウイスキー類</h4>
+          </div>
+          <div class="drink-list">
+            <div>
+              <p class="drink-category">芋焼酎</p>
+              <ul>
+                <li>本霧島（宮崎限定）</li>
+                <li>白霧島</li>
+                <li>SUZU霧島</li>
+                <li>木挽（黒）</li>
+                <li>木挽（白）</li>
+                <li>木挽（ブルー）</li>
+              </ul>
+            </div>
+            <div>
+              <p class="drink-category">その他</p>
+              <ul>
+                <li>飫肥杉</li>
+                <li>いいちこ</li>
+                <li>白岳しろ</li>
+                <li>ウイスキー</li>
+                <li>ブランデー</li>
+                <li>梅酒</li>
+              </ul>
+            </div>
+          </div>
+          <p class="drink-note">水割り、お湯割り、ロック、ソーダ割りがご用意できます。</p>
+        </div>
+
+        <div class="menu-card border-blue">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-cocktail neon-blue"></i>
+            <h4>カクテル</h4>
+          </div>
+          <div class="drink-list drink-list-single">
+            <ul>
+              <li>ジントニック</li>
+              <li>ジンコーク</li>
+              <li>ジンバック</li>
+              <li>ピーチソーダ</li>
+              <li>ピーチウーロン</li>
+              <li>ピーチ梅酒</li>
+              <li>ファジーネーブル</li>
+              <li>カシスソーダ</li>
+              <li>カシスオレンジ</li>
+              <li>カシスウーロン</li>
+              <li>ウイスキーソーダ（ハイボール）</li>
+              <li>ウイスキーコーク</li>
+              <li>ウイスキージンジャー</li>
+              <li>ウイスキーオレンジ</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-card border-purple">
+          <div class="card-title-wrap">
+            <i class="fa-solid fa-cup-straw neon-purple"></i>
+            <h4>ソフトドリンク</h4>
+          </div>
+          <div class="drink-list drink-list-single">
+            <ul>
+              <li>コーラ</li>
+              <li>ジンジャーエール</li>
+              <li>オレンジジュース</li>
+              <li>緑茶</li>
+              <li>ウーロン茶</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SNS Section (新規追加) -->
+  <section class="sns-section" id="sns-section">
+    <div class="section-title fade-in">
+      <span>Connect With Us</span>
+      <h2>Follow Us</h2>
+    </div>
+
+    <div class="sns-container">
+      <!-- Instagram Block -->
+      <div class="sns-block instagram-block fade-in">
+        <div class="sns-block-header instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <h3>Instagram</h3>
+        </div>
+        <p class="sns-block-desc">
+          店内の内装、カクテル、コスプレイベントの様子や、最新情報などをビジュアルでお届けします。
+        </p>
+        
+        <div class="instagram-grid">
+          <!-- Item 1: 店内写真 -->
+          <div class="instagram-item">
+            <img src="https://images.unsplash.com/photo-1574096079513-d8259312b785?q=80&w=800&auto=format&fit=crop" alt="R's 店内の雰囲気">
+            <div class="instagram-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>店内写真</span>
+            </div>
+          </div>
+          <!-- Item 2: カクテル写真 -->
+          <div class="instagram-item">
+            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=800&auto=format&fit=crop" alt="カクテル">
+            <div class="instagram-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>カクテル</span>
+            </div>
+          </div>
+          <!-- Item 3: コスプレイベント -->
+          <div class="instagram-item">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop" alt="コスプレイベント">
+            <div class="instagram-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>コスプレイベント</span>
+            </div>
+          </div>
+          <!-- Item 4: 最新情報 -->
+          <div class="instagram-item">
+            <img src="https://images.unsplash.com/photo-1485872224824-94e0236a8f50?q=80&w=800&auto=format&fit=crop" alt="最新情報">
+            <div class="instagram-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>最新情報</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-outline" data-sns="instagram" id="btn-instagram-view">Instagramを見る</a>
+      </div>
+
+      <!-- TikTok Block -->
+      <div class="sns-block tiktok-block fade-in">
+        <div class="sns-block-header tiktok">
+          <i class="fa-brands fa-tiktok"></i>
+          <h3>TikTok</h3>
+        </div>
+        <p class="sns-block-desc">
+          店内の賑やかな様子、キャストの日常やおすすめドリンクの紹介など、動画で魅力を発信します。
+        </p>
+
+        <div class="tiktok-grid">
+          <!-- Card 1: イベント動画 -->
+          <div class="tiktok-item">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=800&auto=format&fit=crop" alt="イベント動画">
+            <div class="tiktok-overlay">
+              <div class="tiktok-play-btn"><i class="fa-solid fa-play"></i></div>
+              <h4>イベント動画</h4>
+              <span>店内の賑わいをお届け</span>
+            </div>
+          </div>
+          <!-- Card 2: キャスト紹介 -->
+          <div class="tiktok-item">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="キャスト紹介">
+            <div class="tiktok-overlay">
+              <div class="tiktok-play-btn"><i class="fa-solid fa-play"></i></div>
+              <h4>キャスト紹介</h4>
+              <span>キャストの日常や魅力を配信</span>
+            </div>
+          </div>
+          <!-- Card 3: おすすめドリンク -->
+          <div class="tiktok-item">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800&auto=format&fit=crop" alt="おすすめドリンク">
+            <div class="tiktok-overlay">
+              <div class="tiktok-play-btn"><i class="fa-solid fa-play"></i></div>
+              <h4>おすすめドリンク</h4>
+              <span>人気カクテルのメイキング</span>
+            </div>
+          </div>
+          <!-- Card 4: 店内紹介 -->
+          <div class="tiktok-item">
+            <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=800&auto=format&fit=crop" alt="店内紹介">
+            <div class="tiktok-overlay">
+              <div class="tiktok-play-btn"><i class="fa-solid fa-play"></i></div>
+              <h4>店内紹介</h4>
+              <span>臨場感あふれるルームツアー</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-accent" data-sns="tiktok" id="btn-tiktok-view">TikTokを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Area (CTA強化) -->
+  <section class="cta-area fade-in">
+    <div class="cta-container">
+      <span class="cta-tag">SNS Info</span>
+      <h2 class="cta-title">
+        最新情報やキャストの姿を、<br>
+        今すぐSNSでチェック！
+      </h2>
+      
+      <div class="cta-cards">
+        <div class="cta-card">
+          <i class="fa-brands fa-instagram"></i>
+          <p>最新イベントは<br><strong>Instagram</strong>で配信中</p>
+        </div>
+        <div class="cta-card">
+          <i class="fa-brands fa-tiktok"></i>
+          <p><strong>TikTok</strong>で<br>店内の雰囲気をチェック</p>
+        </div>
+        <div class="cta-card">
+          <i class="fa-regular fa-calendar-check"></i>
+          <p>ご予約前に<br><strong>SNS</strong>をぜひご覧ください</p>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-outline" data-sns="instagram" id="cta-btn-instagram">Instagramへ</a>
+        <a href="#" class="btn btn-accent" data-sns="tiktok" id="cta-btn-tiktok">TikTokへ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">R'<span>s</span></div>
+      <p class="footer-desc">Premium Lounge & Concept Bar "R's" - プレミアムな空間で過ごす、特別なひとときを。</p>
+      
+      <div class="footer-sns">
+        <a href="#" data-sns="instagram" title="Instagram" id="footer-link-instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" data-sns="tiktok" title="TikTok" id="footer-link-tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" data-sns="x" class="x-link" title="X (Twitter)" id="footer-link-x"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      
+      <p class="copyright">&copy; 2026 R's Premium Lounge & Concept Bar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
