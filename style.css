@@ -246,7 +246,6 @@ header {
     linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.70) 100%);
   z-index: 2;
 }
-
 .hero-bg {
   position: absolute;
   top: 0;
@@ -257,7 +256,6 @@ header {
   object-position: center;
   z-index: 0;
 }
-
 .hero-neon-overlay {
   position: absolute;
   top: 0;
@@ -297,31 +295,7 @@ header {
   display: block;
   margin-bottom: 0.4rem;
 }
-
-.hero-neon-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--font-en);
-  font-size: 38vw;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  overflow: hidden;
-  max-width: 100%;
-  background: linear-gradient(135deg, #ff2a74 0%, #b92eff 50%, #00f2fe 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  opacity: 0.18;
-  filter: drop-shadow(0 0 40px rgba(185, 46, 255, 1)) drop-shadow(0 0 80px rgba(185, 46, 255, 0.6));
-  z-index: 2;
-  pointer-events: none;
-  user-select: none;
-  margin: 0;
-  animation: neon-flicker 6s infinite alternate;
-}
+
 
 .hero-logo-yomi {
   font-size: 1.8rem;
@@ -333,57 +307,13 @@ header {
   margin-top: 0.6rem;
   margin-bottom: 0.8rem;
 }
+
 
-.hero-neon-menu-text {
-  font-family: var(--font-en);
-  font-size: 4rem;
-  font-weight: 800;
-  letter-spacing: 0.25em;
-  color: #ffffff;
-  text-shadow: 0 0 2px #ffffff, 0 0 6px #00f2fe, 0 0 14px #00f2fe, 0 0 28px #b92eff;
-  display: block;
-}
-
-/* 浮遊ネオンデコレーション */
-.neon-deco {
-  position: absolute;
-  font-size: 2.8rem;
-  opacity: 0.85;
-  filter: drop-shadow(0 0 8px currentColor);
-  animation: float-deco 6s ease-in-out infinite alternate;
-}
-
-.deco-music-1 {
-  left: -20px;
-  top: 15px;
-  color: #ff2a74;
-  animation-delay: 0s;
-  font-size: 2.2rem;
-}
-
-.deco-music-2 {
-  left: -45px;
-  top: 100px;
-  color: #b92eff;
-  animation-delay: 1.5s;
-  font-size: 2.5rem;
-}
-
-.deco-mic {
-  left: -60px;
-  bottom: 50px;
-  color: #ff5f00;
-  animation-delay: 0.8s;
-  font-size: 3rem;
-}
-
-.deco-game {
-  right: -30px;
-  top: 45px;
-  color: #00f2fe;
-  animation-delay: 2.2s;
-  font-size: 3.2rem;
-}
+/* 浮遊ネオンデコレーション */
+
+
+
+
 
 /* リードテキスト */
 .hero-lead-text {
@@ -440,17 +370,7 @@ header {
   .hero {
     min-height: 650px;
   }
-  .hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-}
-  .hero-neon-logo-container {
+.hero-neon-logo-container {
     padding: 2rem 1.5rem;
     margin-bottom: 2.5rem;
   }
@@ -463,8 +383,7 @@ header {
   text-shadow: 0 0 8px rgba(0,0,0,0.9), 0 0 14px rgba(0,0,0,0.8), 0 0 26px #ff2a74, 0 0 40px #ff2a74;
   display: block;
   margin-bottom: 0.4rem;
-}
-  .hero-neon-title { font-size: 52vw; }
+}
   .hero-logo-yomi {
   font-size: 1.8rem;
   font-weight: 600;
@@ -474,17 +393,7 @@ header {
   display: block;
   margin-top: 0.6rem;
   margin-bottom: 0.8rem;
-}
-  .hero-neon-menu-text {
-    font-size: 2.6rem;
-  }
-  .neon-deco {
-    font-size: 1.8rem;
-  }
-  .deco-music-1 { left: -10px; top: 5px; }
-  .deco-music-2 { left: -25px; top: 60px; font-size: 1.8rem; }
-  .deco-mic { left: -30px; bottom: 30px; font-size: 2.2rem; }
-  .deco-game { right: -15px; top: 25px; font-size: 2.2rem; }
+}
   
   .hero-lead-text {
     font-size: 1.3rem;
@@ -919,6 +828,35 @@ footer {
   }
 }
 
+/* hero 480px */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 560px;
+    padding: 0 4%;
+  }
+  .hero-neon-logo-container {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .hero-sub-logo {
+    font-size: 2.8rem;
+  }
+  .hero-logo-yomi {
+    font-size: 1.3rem;
+    letter-spacing: 0.3em;
+  }
+  .hero-lead-text {
+    font-size: 1.1rem;
+  }
+  .hero-sns-actions {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  .hero-sns-actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
 @media (max-width: 480px) {
   .logo a {
     font-size: 1.5rem;
