@@ -309,6 +309,7 @@ header {
   line-height: 1;
   letter-spacing: -0.02em;
   overflow: hidden;
+  max-width: 100%;
   background: linear-gradient(135deg, #ff2a74 0%, #b92eff 50%, #00f2fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
