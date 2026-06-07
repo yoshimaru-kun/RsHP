@@ -1379,3 +1379,177 @@ footer {
   }
 }
 
+
+/* 店舗情報セクション */
+.store-info-section {
+  padding: 6rem 5%;
+  background-color: var(--color-bg-dark);
+}
+
+.store-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.store-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin: 0;
+}
+
+.store-info-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.store-info-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.store-info-row dt {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-gray);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.store-info-row dd {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.store-info-row dd a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.store-info-row dd a:hover {
+  color: #ff2a74;
+}
+
+.store-map {
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 42, 116, 0.25);
+  box-shadow: 0 0 20px rgba(185, 46, 255, 0.15);
+}
+
+.store-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .store-info-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .store-map {
+    height: 280px;
+  }
+  .store-info-row {
+    grid-template-columns: 110px 1fr;
+  }
+}
+/* ギャラリーセクション */
+.gallery-section {
+  padding: 6rem 5%;
+  background-color: #08080f;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item--large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.gallery-item--large {
+  aspect-ratio: unset;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* 写真未設定時のプレースホルダー */
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+.gallery-placeholder i {
+  font-size: 2.5rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item--large {
+    grid-column: span 2;
+    grid-row: span 1;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item--large {
+    grid-column: span 1;
+    aspect-ratio: 16 / 9;
+  }
+}
