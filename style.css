@@ -1324,15 +1324,18 @@ footer {
   }
   
   .menu-board-header {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
   
   
 .menu-header-icons {
-    justify-content: center;
-    width: 100%;
-  }
+      justify-content: center;
+      width: auto;
+      flex: 1;
+    }
   
   .left-icons {
     order: 2;
@@ -1341,8 +1344,10 @@ footer {
     order: 3;
   }
   .menu-main-title {
-    order: 1;
-  }
+      order: 1;
+      width: 100%;
+      flex: none;
+    }
   
   .neon-text-rs {
     font-size: 3.2rem;
