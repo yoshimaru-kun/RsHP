@@ -295,7 +295,8 @@ header {
   display: block;
   margin-bottom: 0.4rem;
 }
-
+
+
 
 .hero-logo-yomi {
   font-size: 1.8rem;
@@ -307,13 +308,19 @@ header {
   margin-top: 0.6rem;
   margin-bottom: 0.8rem;
 }
-
 
-/* 浮遊ネオンデコレーション */
-
-
-
-
+
+
+/* 浮遊ネオンデコレーション */
+
+
+
+
+
+
+
+
+
 
 /* リードテキスト */
 .hero-lead-text {
@@ -383,7 +390,8 @@ header {
   text-shadow: 0 0 8px rgba(0,0,0,0.9), 0 0 14px rgba(0,0,0,0.8), 0 0 26px #ff2a74, 0 0 40px #ff2a74;
   display: block;
   margin-bottom: 0.4rem;
-}
+}
+
   .hero-logo-yomi {
   font-size: 1.8rem;
   font-weight: 600;
@@ -393,7 +401,13 @@ header {
   display: block;
   margin-top: 0.6rem;
   margin-bottom: 0.8rem;
-}
+}
+
+
+
+
+
+
   
   .hero-lead-text {
     font-size: 1.3rem;
@@ -938,6 +952,10 @@ footer {
   margin-bottom: 2.5rem;
 }
 
+
+.menu-deco-icon {
+  font-size: 3rem;
+}
 .menu-header-icons {
   display: flex;
   gap: 1.2rem;
@@ -1310,7 +1328,8 @@ footer {
     gap: 1.5rem;
   }
   
-  .menu-header-icons {
+  
+.menu-header-icons {
     justify-content: center;
     width: 100%;
   }
